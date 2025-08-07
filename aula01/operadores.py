@@ -23,7 +23,7 @@ print("Resultado da subtração:",n1,"-",n2,"=",subt) #subtração
 print("Resultado da divisão inteira:",n1,"//",n2,"=",divi_int) #divisão inteira
 print("Resultado do resto de :",n1,"=",resto) #resto da divisão por dois
 
-print(40*"-","Operadores de comparação",40*"-")
+print(40*"-","Operadores de atribuição",40*"-")
 
 #operadores de coparação
 n1 > n2
