@@ -35,7 +35,7 @@ print(f"O resultado de {n5} ** {n6} é igual a {potencia}")
 #NOTE - ATIVIDADE 3
 
 #titulo
-print(30*"-","ATIVIDADE 4",30*"-")
+print(30*"-","ATIVIDADE 3",30*"-")
 
 #entrada de informações
 nome = str(input("Qual é o seu nome? "))
