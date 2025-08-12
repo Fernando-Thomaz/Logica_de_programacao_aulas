@@ -1,14 +1,14 @@
 #"titulo na tela"
 print(40*"-","Entrada de dados",40*"-")
 
-#codigo que necessita de entrada de dados "nome"
+#codigo que pede a entrada de dados "nome"
 nome_usuario = input("Digite o seu nome: ")
 print("Seja bem-vindo ao seu sistema python",nome_usuario)
 
 #"titulo"
 print(40*"-","Calculadora",40*"-")
 
-#entrada de dados da calculadora
+#pedindo a entrada de dados da calculadora
 n1 = float(input("Digite o primiero número:"))
 n2 = float(input("Digite o segundo número:"))
 '''
