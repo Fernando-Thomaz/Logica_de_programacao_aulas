@@ -144,6 +144,7 @@ if idade2 >= 12 and altura2 >= 1.2:
 else:
     print(f"A entrada de {nome3} não é permitida")
 '''
+'''
 #titulo
 print(30*"-","Menor ou maior de idade",30*"-")
 
@@ -153,3 +154,4 @@ idade3 = int(input("Escreva a sua idade: "))
 
 #operarios ternario
 print(f"{nome4} é maior de idade" if idade3 >= 18 else f"{nome4} é menor de idade")
+'''
