@@ -286,3 +286,19 @@ while True:
         print(f"opção  invalida.")
         continue
 '''
+'''
+#NOTE - FOR é um codigo para repetir um codigo de forma finita
+que nem o while, mais de forma finita que o codigo define, nao o usuario
+'''
+'''
+#titulo
+print(30*"-","FOR",30*"-")
+#loop com um tempo limite
+for n in range(5):
+    print(n+1)
+#variavel
+nome = "Gomes"
+#loop
+for i in nome:
+    print(i)
+'''
