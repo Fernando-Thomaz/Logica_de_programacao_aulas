@@ -1,5 +1,5 @@
 '''
-Programa: sorteio V.1.0
+Programa: sorteio V.2.0
 Importando biblioteca
 Random: escolha aleatoria
 Descrição sistema recebe o nome dos candidatos e realiza o sorteio
