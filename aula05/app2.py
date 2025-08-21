@@ -1,3 +1,7 @@
+'''
+Programa: manipulaçao de arquivos 1.0
+'''
+
 # biblioteca
 import os
 
