@@ -134,7 +134,6 @@ while True:
         print(f"Fechando programa.")
         break
 '''
-'''
 #titulo
 print(30*"-","Bem-vindo",30*"-")
 #coleta de dados
@@ -286,9 +285,8 @@ while True:
         print(f"opção  invalida.")
         continue
 '''
-'''
 #NOTE - FOR é um codigo para repetir um codigo de forma finita
-que nem o while, mais de forma finita que o codigo define, nao o usuario
+# que nem o while, mais de forma finita que o codigo define, nao o usuario
 '''
 '''
 #titulo
