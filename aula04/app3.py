@@ -12,10 +12,10 @@ sair = False
 
 while sair == False:
     candidato = str(input(f"Digite os nomes para o sorteio ou pressione enter para sair: "))
-    if candidato != "":
+    if candidato == "":
+        sair = True
+    else:
         #APPEND e para adicionar uma variavel a lista
         lista.append(candidato)
-    else:
-        sair = True
-escolhido = random.choices(lista)
+escolhido = random.choice(lista)
 print(f"Escolhido foi: {escolhido}")
