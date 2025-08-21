@@ -40,7 +40,7 @@ while True:
             #atualiza a pasta
             with open(f"{novo_arquivo}.txt","r",encoding="utf-8") as f:
                 texto_final = f.read()
-                print(f"Texto final: {texto_final}")
+            print(f"Texto final: {texto_final}")
 
             # loop 2
             while True:
