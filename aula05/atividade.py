@@ -29,7 +29,7 @@ while True:
             os.system("cls")
 
             # menu do 1
-            print("\n--- MENU NOMES ---")
+            print(30*"-","MENU NOMES",30*"-")
             print("1 - Incluir nome")
             print("2 - Pesquisar nome")
             print("3 - Alterar nome")
