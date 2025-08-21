@@ -19,7 +19,8 @@ while True:
             # chama o arquivo
             with open(f"{arquivo}.txt","r",encoding="utf-8") as f:
                 arquivo_abrir = f.read()
-
+            
+            # limpa a tela
             os.system("cls" if os.name == "nt" else "clear")
 
             # mostrar os dados do arquivo
