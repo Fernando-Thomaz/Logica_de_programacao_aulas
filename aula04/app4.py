@@ -21,7 +21,7 @@ while True:
 while True:
     if lista_nome:
         os.system("cls")
-        escolhido = random.choices(lista_nome)
+        escolhido = random.choice(lista_nome)
         lista_sorteio.append(escolhido)
         #exclui o sorteio da lista original
         '''
