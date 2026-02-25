@@ -1,0 +1,134 @@
+<!-- tipo de documento-->
+<!DOCTYPE html>
+
+<!-- linguagem da pagina-->
+<html lang="pt-br">
+
+<!-- cabecalho -->
+<head>
+    <meta charset="UTF-8">
+
+    <!-- titulo da pagina-->
+    <title>Sistema de Abastecimento</title>
+
+    <!-- estilizando -->
+    <style>
+        button:hover{
+            background-color: chartreuse;
+        }
+        button{
+            width: 80%;
+            height: 25%;
+            background-color: yellowgreen;
+            border-radius: 8px;
+            font-weight: bold;
+            color: white;
+            border: none;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: antiquewhite;
+        }
+        h3{
+            color: blue;
+            font-size: 20px;
+        }
+        .container-resultado{
+            background-color: whitesmoke;
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 15px;
+            width: 100%;
+        }
+        .container-formulario{
+            padding: 20px;
+            background-color: rgb(20, 155, 155);
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<!-- conteudo da pagina-->
+<body>
+    <!-- titulo -->
+    <h1>Sistema de Abastecimento</h1>
+
+    <!-- paragrafo -->
+    <p>Este é o sistema de abastecimento do veiculo.</p>
+
+    <!-- divisao de conteudo-->
+    <div class="conteudo">
+        <!-- divisao da caixa de formulario-->
+        <div class="container-formulario">
+            <div class="container-inputs">
+                <!-- formulario de abastecimento -->
+                <label>Quilometragem inicial:</label><br>
+                <!-- input - o usuario vai inserir informações aqui -->
+                <input type="number" id="kmInicial"><br><br>
+                
+                <label>Quilometragem final:</label><br>        
+                <!-- input - o usuario vai inserir informações aqui -->
+                <input type="number" id="kmFinal"><br><br>
+
+                <label>Litros abastecidos:</label><br>       
+                <!-- input - o usuario vai inserir informações aqui -->
+                <input type="number" id="litros"><br><br>
+
+                <label>Preço por litro</label>:</label><br>      
+                <!-- input - o usuario vai inserir informações aqui -->
+                <input type="number" id="precoLitro"><br><br>
+            </div>
+
+            <!-- butao para calcular o abastecimento -->
+            <button onclick="calcular()">Calcular</button>
+        </div>
+
+        <!-- divisao da caixa de resultado-->
+        <div class="container-resultado">    
+            <h3 id="resultado">Resultado:</h3>
+        </div>
+    </div>
+
+    <!-- abre um script em js -->
+    <script>
+        // funcao de calcular
+        function calcular() {
+            // determina as variaveis
+            let kmInicial = Number(document.getElementById("kmInicial").value);
+            let kmFinal = Number(document.getElementById("kmFinal").value);
+            let litros = Number(document.getElementById("litros").value);
+            let precoLitro = Number(document.getElementById("precoLitro").value);
+
+            // se a quilometragem final for maior que a inicial da erro
+            if (kmFinal <= kmInicial) {
+                // insere a mensagem de erro pro html
+                document.getElementById("resultado").innerHTML = "Erro: A quilometragem final deve ser maior que a inicial!";
+                return;
+            }
+            
+            // se os litros ou o preco ser menor ou igual a zero da erro
+            if (litros <= 0 || preco <= 0) {
+                // insere a mensagem de erro pro html
+                document.getElementById("resultado").innerHTML = "Erro: litros e preco devem ser maior que zero!";
+                return;
+            }
+
+            // calculo
+            let kmRodado = kmFinal-kmInicial;
+            let consumoMedio = kmRodado/litros;
+            let custoTotal = litros*precoLitro;
+            let custoPorKm = custoTotal/kmRodado;
+            
+            document.getElementById("resultado").innerHTML = "Km rodado:" , kmRodado , "km <br> Consumo medio:" , consumoMedio.toFixed(2) , "km/l <br> Custo total:" , custoTotal.toFixed(2) , "<br> Custo por km: R$" , custoPorKm.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
