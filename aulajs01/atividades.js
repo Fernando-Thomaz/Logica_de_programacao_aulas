@@ -1,5 +1,5 @@
 // variaveis do estacionamento
-var estacionamentolivre = 1;
+var estacionamentolivre = 10;
 var diaria = 20;
 var hora = 8;
 var vip = 0.8;
