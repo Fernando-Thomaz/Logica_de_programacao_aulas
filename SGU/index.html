@@ -1,0 +1,116 @@
+<!-- tipo de documento-->
+<!DOCTYPE html>
+
+<!-- tipo de linguagem -->
+<html lang="pt-br">
+
+    <!-- cabeçalho-->
+    <head>
+        <!-- configuração da pagina-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD - Usuários</title>
+
+        <!-- link css-->
+        <link rel="stylesheet" href="static/css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <link rel="stylesheet" href="/static/css/styles.css">
+
+    </head>
+
+    <!-- conteudo da pagina-->
+    <body>
+        <!-- divisao de titulo-->
+        <div class="cabecalho">
+            <h1 class="text-center">Gerenciamento de usuario</h1>
+        </div>
+
+        <!-- divisao de conteudo da pagina -->
+        <div class="conteudo">
+
+            <!-- divisao-->
+            <div class="container">
+                <a href="#" class="btn btn-primary mb-3">+ Adicionar Usuário</a>
+            </div>
+
+            <!-- divisao da tabela-->
+            <div class="tabela">
+                <!-- estilizacao do bootstrap-->
+                <table class="table table-dark">
+                    <!-- cabeçalho da tabela -->
+                    <thead>
+                        <!-- lista na horizontal -->
+                        <tr>
+                            <!-- colunas da tabela da lista -->
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Telefone</th>
+                            <th scope="col">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <!-- conteudo da tabela-->
+                    <tbody>
+                        <!-- lista na horizontal -->
+                        <tr>
+                            <!-- informações da lista-->
+                            <th scope="row">1</th>
+                            <td>Karython Gomes</td>
+                            <td>karython@email.com</td>
+                            <td>(11) 99999-9999</td>
+                            <td>
+                                <!-- "botao" na lista para a edicao e exclucao de usuarios-->
+                                <a href="#" class="btn btn-outline-primary">Editar</a>
+                                <a href="#" class="btn btn-outline-danger">Excluir</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- imagem do senai no rodape-->
+            <img src="/static/img/senai-logo.png" alt="logo do senai" width="20%">
+        </div>
+        
+        <!-- rodape -->
+        <footer class="text-center mt-4">
+            <!-- divisao do rodape -->
+            <div class="footer-conteudo">
+                <p>&copy; 2024 CRUD - Usuários. Todos os direitos reservados. Desenvolvido por <a href="https://karythongomes.com.br"><strong>GomesTechnology</strong></a></p>
+
+                <!-- divisao para contatos-->
+                <div class="footer-contato">
+                    <p>Contato: <a href="mailto:karython.gomes@senai.br">karython.gomes@senai.br</a></p>
+                    <p>Endereço: Av. Brasil, 158 - Taguatinga, DF</p>
+                    <p>
+                        <!-- icone pego de um preset (font awesome)-->
+                        <i class="fa-solid fa-phone fa-2xl" style="color: rgb(0, 0, 0);"></i> Telefone: (61) 1234-5678
+                    </p>
+                </div>
+
+                <!-- divisao para as redes sociais-->
+                <div class="social-icons">
+                    <!-- link para redirecionar pro instagram -->
+                    <a href="https://www.instagram.com" target="_blank">
+                        <!-- icone pego de um preset (font awesome) -->
+                        <i class="fa-brands fa-square-instagram fa-2xl" style="color: rgb(0, 0, 0);"></i>
+                    </a>
+
+                    <!-- link para redirecionar pro facebook --> 
+                    <a href="https://www.facebook.com" target="_blank">
+                        <!-- icone pego de um preset (font awesome) -->
+                        <i class="fa-brands fa-square-facebook fa-2xl" style="color: rgb(0, 0, 0);"></i>
+                    </a>
+
+                    <!-- link para redirecionar pro linkedin -->
+                    <a href="https://www.twitter.com" target="_blank">
+                        <!-- icone pego de um preset (font awesome) -->
+                        <i class="fa-brands fa-square-x-twitter fa-2xl" style="color: rgb(0, 0, 0);"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+.color-black {
+    color: black;
+}
+
+.conteudo {
+    background-color: #24242c;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+body{
+    background-color: #24242c;
+}
+
+.tabela{
+    justify-content: space-around;
+}
+
+footer{
+    background-color: #24242c;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons{
+    justify-content: space-around;
+}
+
+.cabecalho{
+    background-color: black;
+    padding: 10px;
+}
