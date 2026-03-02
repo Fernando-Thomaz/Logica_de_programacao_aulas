@@ -15,19 +15,15 @@ p {
 }
 
 h1 {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 body{
     background-color: #24242c;
 }
 
-.tabela{
-    justify-content: space-around;
-}
-
 footer{
-    background-color: #24242c;
+    background-color: #242429;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
